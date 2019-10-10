@@ -49,11 +49,262 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap');
+
+
+@formfont: 3rem;
+@navfootcolor: gray;
+
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-interact {
+	color: white;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	font-family: 'Noto Serif SC', serif;
+	font-size: 62.5%;
+	background-color: slategrey;	
 }
+
+
+
+header {
+	font-size: 2.5rem;
+	background-color: @navfootcolor;
+	height: 3%;
+	
+	.nav-menu {
+		.flex-wrap();
+		justify-content: center;
+		justify-content: space-evenly
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	a:hover {
+		.a-interact();
+	}
+
+	a:visited {
+		.a-interact();
+	}
+
+	@media (max-width: 500px) {
+		font-size: 1.5rem;
+		height: 2%;
+
+		a:visited {
+			color:black;
+		}
+	}// End Mobile header style
+} // End header styles
+
+.container {
+	width: 100%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	padding-left: 20%;
+	padding-top: 5%;
+	
+	h1 {
+		font-size: 4rem;
+		padding-bottom: 7%;
+		text-decoration: underline;
+	}
+
+	
+
+	h2 {
+		font-size: 3rem;
+		padding-bottom: 3%;
+	}
+
+	p {
+		padding-bottom: 3%;
+		font-size: 1.5rem;
+	}
+
+	.workhistory {
+		padding-left: 10%;
+
+		.work2 {
+			border-bottom: 1px solid black;
+		}
+	}
+
+	h3 {
+		font-size: 1.4rem;
+		text-decoration: underline;
+		padding-bottom: 2%;
+	}
+
+	.skills {
+		border-bottom: 1px solid black;
+	}
+
+	@media (max-width: 500px) {
+		p {
+			font-size: 1.2rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}	
+	}// End mobile Container styles
+
+} // End Main Container styles
+
+.bottom-container {
+	height: 100%;
+	width: 80%;
+	padding-left: 20%;
+	.flex-wrap();
+	
+	h1 {
+		font-size: 4rem;
+		text-decoration: underline;
+	}
+
+	p {
+		font-size: 1.5rem;
+		padding-top: 3%;
+		padding-bottom: 2%;
+	}
+
+	.about-me {
+		width: 60%;
+	}
+
+	.img1 {
+		padding-left: 10%;
+	}
+
+	h2 {
+		font-size: 2rem;
+		padding-top: 5%;
+		padding-left: 30%;
+	}
+
+	@media (max-width: 500px) {
+		p {
+			font-size: 1.2rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		.about-me {
+			width: 100%;
+		}
+          
+	}// End Mobile bottom-container styles
+} // End Bottom container styles
+
+
+form {
+	padding-left: 25%;
+	padding-top: 5%;
+
+	.first-name {
+		font-size: @formfont;
+	}
+
+	.last-name {
+		font-size: @formfont;
+	}
+
+	.email {
+		font-size: @formfont;
+	}
+
+	@media (max-width: 500px) {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}// End mobile form styles
+} // End Form Styles
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-evenly;
+	
+	p {
+		padding-top: 3%;
+		font-size: 2rem;
+		line-height: 1.5;	
+	}
+
+	@media (max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		padding-left: 25%;
+		width: 100%;
+
+	}// End mobile footer style
+} // end footer styles
+
+button {
+	margin-left: 40%;
+
+	@media (max-width: 500px) {
+		background-color: gray;
+	}// End mobile button style
+} // End Button styles
+
+	
+
+
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

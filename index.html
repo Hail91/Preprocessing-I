@@ -7,13 +7,121 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <script src="https://kit.fontawesome.com/b8bd7a33d0.js" crossorigin="anonymous"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <header>
+    <nav class='nav-menu'>
+      <a href='#work-skills'>My Skills</a>
+      <a href='#about-me'>About Me</a>
+      <a href='https://hail91.github.io/' target="_">Portfolio</a>
+      <a href='#contact'>Contact</a>
+    </nav>
+  </header>
+<div class='container'>  
+  <div class='skills'>
+    <section id='work-skills'>
+      <div class='my-skills'>
+        <div class='JS'>
+          <h1>My Skills</h1>
+            <i class="fab fa-js" style='font-size: 50px;'></i>
+          <h2>JavaScript</h2>
+          <p>I've spent about 3 months learning JavaScript, and I've come to realize I've only
+							really scratched the surface of what is possible with JavaScript. I plan on devoting
+							a lot of time into really getting comfortable with it, and implementing it into all 
+							my projects going forward.</p>
+        </div>
+        <div class='HTML'>
+            <i class="fab fa-html5" style='font-size: 50px;' ></i>
+            <h2>HTML5</h2>
+            <p>I have several months of experience writing clean, semantic HTML to help with
+                website structure, as well as SEO considerations.</p>
+        </div>
+        <div class='CSS'>
+            <i class="fab fa-css3" style='font-size: 50px;'></i>
+            <h2>CSS3</h2>
+             <p> I've been working with CSS3 for about 3 months now. Working with CSS has been
+                a humbling experience as CSS seems to always have a few tricks up it's sleeve!
+                But it's a truly powerful tool in the web development world, and I truly enjoy
+                working with it.</p>
+        </div>
+      </div>
+    </div>
+    <div class='workhistory'>
+        <section class='work-history'>
+        <div class='work1'>
+          <h1>Work History</h1>
+          <h2>Sales/Merchandising - Golub Corporation</h2>
+          <h3>2010-2014</h3>
+          <p>I worked in Sales/Merchandising for the Golub Corporation in Syracuse, NY for four 
+            years. My main responsibilies included...Building product displays, tracking product 
+            movement, pushing high performers, and scratching poor performers. I was also responsible 
+            for maintaining quality standards, and making sure employees followed company protocol with regard 
+            to quality control.
+          </p>
+        </div>
+        <div class='work2'>
+          <h2>Department Manager - Wakefern Food Corp.</h2>
+            <h3>2014-2019</h3>
+            <p>I worked for the Wakefern Food Corporation as a department manager/merchandising manager.
+              My main responsibilies included overseeing a team of 6-10 employees, assigning and following up 
+              on tasks, tracking and meeting quarterly sales/loss objectives using MS Excel, as well as following up 
+              and executing corporate merchandising objectives. 
+            </p>
+          </section>
+      </div>   
+  </div>
+</div>
+<div class='bottom-container'>
+  <div class='about-me'>
+  <h1>About Me</h1>
+  <p>My name is Aaron Gillies, I'm 28 years old and an aspiring software/web developer. I currently attend Lambda School
+    for their Full Stack Web Development program. Prior to this, all my experience has been in the retail sales and merchandising 
+    space. I've decided to pursue a career in technology because it is something that has always piqued my interest, and of the power 
+    that is has to change lives worldwide. I'm someone who constantly needs to be learning or improving, and I can't think of a better 
+    career path for it!
+  </p>
+    <div class='contact-msg'>
+      <h2>Contact me below!</h2>
+    </div>
+    <form action='#' method='get'>
+      <div class='first-name'>
+        <label for='name'>First Name:</label>
+        <input type='text' id='name' name='firstname'>
+      </div>
+      <div class='last-name'>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="name" name="lastname">
+      </div>
+      <div class='email'>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="useremail">
+      </div>
+      </form>
+      <button type='submit-button'>Submit</button>
+        
+  </div>
+  <div class='img1'>
+  <img src='../Preprocessing-I/images/Aaron.jpg' alt='personal-img'>
+  </div>
+  </div>
+
+ 
+
+  
+  <footer>
+    <p>My Email: aarongillies88@gmail.com</p>
+    <p>My Phone number: (315-254-8427)</p>
+  </footer>
+
+
+
+
+
+  
 </body>
 </html>
