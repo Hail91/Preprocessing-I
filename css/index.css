@@ -1,1 +1,316 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif SC'), local('NotoSerifSC-Regular'), url(https://fonts.gstatic.com/s/notoserifsc/v6/H4chBXePl9DZ0Xe7gG9cyOj7kqGWbQ.otf) format('opentype');
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.a-interact {
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 62.5%;
+  background-color: slategrey;
+}
+header {
+  font-size: 2.5rem;
+  background-color: gray;
+  height: 3%;
+}
+header .nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: white;
+}
+header a:visited {
+  color: white;
+}
+@media (max-width: 500px) {
+  header {
+    font-size: 1.5rem;
+    height: 2%;
+  }
+  header a:visited {
+    color: black;
+  }
+}
+.container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+.container h1 {
+  font-size: 4rem;
+  padding-bottom: 7%;
+  text-decoration: underline;
+}
+.container h2 {
+  font-size: 3rem;
+  padding-bottom: 3%;
+}
+.container p {
+  padding-bottom: 3%;
+  font-size: 1.5rem;
+}
+.container .workhistory {
+  padding-left: 10%;
+}
+.container .workhistory .work2 {
+  border-bottom: 1px solid black;
+}
+.container h3 {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+.container .skills {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container p {
+    font-size: 1.2rem;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+  }
+}
+.bottom-container {
+  height: 100%;
+  width: 80%;
+  padding-left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom-container h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+}
+.bottom-container p {
+  font-size: 1.5rem;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+.bottom-container .about-me {
+  width: 60%;
+}
+.bottom-container .img1 {
+  padding-left: 10%;
+}
+.bottom-container h2 {
+  font-size: 2rem;
+  padding-top: 5%;
+  padding-left: 30%;
+}
+@media (max-width: 500px) {
+  .bottom-container p {
+    font-size: 1.2rem;
+  }
+  .bottom-container h2 {
+    font-size: 1.5rem;
+  }
+  .bottom-container h1 {
+    font-size: 2rem;
+  }
+  .bottom-container .about-me {
+    width: 100%;
+  }
+}
+form {
+  padding-left: 25%;
+  padding-top: 5%;
+}
+form .first-name {
+  font-size: 3rem;
+}
+form .last-name {
+  font-size: 3rem;
+}
+form .email {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+footer p {
+  padding-top: 3%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    width: 100%;
+  }
+}
+button {
+  margin-left: 40%;
+}
+@media (max-width: 500px) {
+  button {
+    background-color: gray;
+  }
+}
